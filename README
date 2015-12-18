@@ -1,0 +1,52 @@
+Assignment 4: Droids: Animation
+
+Team Members: 
+				Dibyendu Mondal - 130050046
+				Anand Bhoraskar - 130050025
+
+Instructions:
+
+Steps to run the program:
+cd A4/
+make
+./Assignment4
+
+Other Instructions:
+First we run the Makefile using make and the run the executable ./Assignment4.
+Run ./make_video.sh to make the movie.
+We have 2 bots. One humanoid (C3PO) and the other non-humanoid (BB-8).
+We can use the keys Up Arrow and Down Arrow to rotate about the X-axis, Left Arrow and Right Arrow to rotate about the Y-axis, PgUp and PgDn to rotate about the Z-axis
+We can select each joint of the 2 bots by pressing the following keys:
+For C3PO - 
+1 - select right hand
+2 - select right elbow
+3 - select left arm
+4 - select left elbow
+5 - select right leg
+6 - select right knee
+7 - select left leg
+8 - select left knee
+
+For BB-8 - 
+9 - select body 
+0 - select head
+c - select goggles
+
+We have constrained all the joints to move only in valid angles.
+After selecting a bot (by selecting some joint) we can use the keys V, B, N, M, G and H to translate the bot in +ve and -ve X, Y and Z directions respectively.
+There are 2 lights and 1 spotlight. 
+Lights can be enabled or disabled using the + and - keys.
+The spotlight can be enabled or disabled be pressing L.
+Perspective mode can be enabled by pressing P.
+We can rotate the camera in X,Y and Z directions by pressing the keys W, S, A, D, Q, E respectively.
+We can save a particular frame by pressing J and playback the saved keyframes by pressing K.
+The final movie movie.mp4 is inside the folder video.
+
+Report Link:
+http://www.cse.iitb.ac.in/~dibyendu/CS475_Assignment4
+
+Citations:
+We used https://www.opengl.org for finding different OpenGL commands/syntax and their documentation.
+For textures we used Google Image Search. Also used the Linux convert tool to convert images to bmp.
+We used ffmpeg library to convert the ppm images formed to jpg and then to a movie.
+We used a youtube song for the audio in the background.
